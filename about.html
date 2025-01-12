@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="shortcut icon" href="Cool-Logo-PNG-Isolated-HD.png" type="image/x-icon">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">lester.dev</a>
+               <nav class="topnav" id="myTopnav">
+                   <a href="index.html">Home</a>
+                   <a href="#" class="active">About</a>
+                   <a href="skill.html">Skills</a>
+                   <a href="contact.html">Contact</a>
+                   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                   </a>
+               </nav>   
+    </header>
+
+    <div class="about">
+        <h2>About me...</h2>
+    </div>
+
+    <div class="text">
+        <p>Hi I'm Lester Adalia from Mabini Batangas taking Bachelor of Science in Information Technology. Let's explore!</p>
+    </div>
+
+    <button class="accordion">Education</button>
+    <div class="panel">
+        <h3>Primary Education</h3>
+        <p>Gasang Elementary School</p> <br>
+        <h3>Secondary Education</h3>
+        <p>Anselmo A. Sandoval Memorial National High School</p> <br>
+        <h3>Tertiary Education</h3>
+        <p>Batangas State University</p>
+    </div>
+
+    <button class="accordion">Skills</button>
+    <div class="panel">
+        <h3>Tech Skills</h3>
+        <ul>
+            <li>-Computer Literate</li>
+            <li>-Basic Troubleshooting</li>
+            <li>-Graphic Designing (Photoshop, Canva)</li>
+        </ul>
+            <br>
+        <h3>Soft Skills</h3>
+        <ul>
+            <li>-Problem Solver</li>
+            <li>-Leadership</li>
+            <li>-Adaptability</li>
+        </ul>
+    </div>
+    
+    <button class="accordion">Experience</button>
+    <div class="panel">
+        <h3>NC2 Holder (Computer System Servicing NC II)</h3>
+    </div>
+
+    <br>
+    <br>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+
+</body>
+</html>

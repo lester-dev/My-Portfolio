@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="shortcut icon" href="Cool-Logo-PNG-Isolated-HD.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">lester.dev</a>
+               <nav class="topnav" id="myTopnav">
+                   <a href="#" class="active">Home</a>
+                   <a href="about.html">About</a>
+                   <a href="skill.html">Skills</a>
+                   <a href="contact.html">Contact</a>
+                   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                   </a>
+               </nav>   
+    </header>
+
+    <section class="home">
+        <div class="home-img">
+            <img src="mine/1.jpg" alt="">
+        </div>
+
+        <div class="home-content">
+            <h1>Hi. I'm <span>Lester</span></h1>
+            <h3 class="text">I'm a <span></span></h3>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                
+            <div class="icon">
+                <a href="https://www.facebook.com/"> <i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/"> <i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://github.com/"> <i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/"> <i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="#" class="btn">Hire me</a>
+        </div>
+    </section>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</body>
+</html>
